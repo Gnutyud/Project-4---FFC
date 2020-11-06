@@ -1,0 +1,128 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    font-size: 14px;
+    color: #696a6e;
+    line-height: 1.4;
+}
+
+#navbar {
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: #f1f1f1;
+    border-right: 3px solid #696a6e;
+}
+
+#navbar header {
+    font-size: 25px;
+    padding: 20px 30px 30px 30px;
+    background-color: #616161;
+    color: white;
+    text-align: center;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 86%;
+    /* overflow: auto; */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.navbar-list li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #696a6e;
+    border-bottom: 1px solid #555;
+    font-size: 16px;
+}
+
+.navbar-list li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+#main-doc {
+    margin-left: 25%;
+    padding: 10px 40px 100px 40px;
+}
+
+@media screen and (max-width: 700px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    #navbar li a {
+        float: left;
+    }
+    #main-doc {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #navbar li a {
+        text-align: center;
+        float: none;
+    }
+    #navbar header {
+        text-align: center;
+    }
+    #navbar,
+    #main-doc {
+        width: 100%;
+    }
+}
+
+.main-section header {
+    font-size: 25px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+article {
+    padding-left: 15px;
+}
+
+.main-section p {
+    margin-bottom: 20px;
+}
+
+article ul {
+    margin-left: 40px;
+    line-height: 1.5;
+}
+
+article ul li {
+    margin-bottom: 25px;
+}
+
+article ul li:last-child {
+    margin-bottom: 0;
+}
+
+code {
+    background-color: #f7f7f7;
+    font-size: 12px;
+    display: block;
+    padding: 20px 25px;
+    border-radius: 5px;
+    margin: 20px 15px;
+}
